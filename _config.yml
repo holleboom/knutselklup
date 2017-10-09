@@ -1,4 +1,4 @@
 auto: true
 permalink: /:title/
-sass:
-    style: compressed
+# sass:
+#     style: compressed
