@@ -2,13 +2,12 @@
 layout: home
 ---
 
-<div class="content">
+<section class="content">
 	<figure class="aside">
-		<img src="/assets/{{ page.url | remove: '/' }}.jpg"
+		<img src="/assets/{{ page.url | remove: '/' }}.jpg"/>
 	</figure>
 
-	<div id="post">
-    	<h1>{{ page.title }}</h1>
+	<article class="text">
     	{{ content }}
-  	</div>
-</div>
+  	</article>
+</section>

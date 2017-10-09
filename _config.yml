@@ -1,2 +1,4 @@
 auto: true
-permalink: /:title
+permalink: /:title/
+sass:
+    style: compressed
