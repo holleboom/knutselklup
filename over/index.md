@@ -1,7 +1,9 @@
 ---
 layout: subpage
-title: Over KnutselKlup Rotterdam
+title: Over
 ---
+
+# Over
 
 Wij zijn Natasja en Lisette, bedenkers van Knutsel Klup en ontwerpers van magazines en boeken. Wij experimenteren met letters,
 kleur en vormen. Kinderen zijn hier het allerbeste in. Zelfs Pablo Picasso wist het: 'Ik had vier jaar nodig om te schilderen
