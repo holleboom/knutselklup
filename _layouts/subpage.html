@@ -2,18 +2,19 @@
 layout: home
 ---
 
-<section class="container">
+<section class="subpage container">
 	<header>
 		<h1 class="center"><span>{{ page.title }}</span></h1>
 	</header>
 	<div class="row">
-		<div class="col-6">
-		</div>
+		<div class="col-6 offset"></div>
 		<article class="col-6 text">
 			{{ content }}
 		</article>
 	</div>
-	<figure class="aside col-5">
-		<img class="col-12" src="/assets/{{ page.url | remove: '/' }}.jpg" />
-	</figure>
+	<div class="row">
+		<figure class="aside col-6 col-12-sm">
+			<img src="/assets/{{ page.url | remove: '/' }}.jpg" />
+		</figure>
+	</div>
 </section>

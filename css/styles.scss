@@ -31,9 +31,13 @@ a {
 }
 
 nav {
+	position: relative;
+	top: $gutter/5;
+	padding: $gutter/5 0;
+
 	font-weight: $font-weight-heavy;
 	text-transform: lowercase;
-	padding: $gutter/4 0;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -46,14 +50,13 @@ nav {
 			border-bottom: none;
 		}
 		&.current a {
-			border-bottom: 2px solid black;
+			border-bottom: 2px solid $black;
 		}
 	}
 	
 
 	@media only screen and (min-width: $breakpoint-med) {
 		position: sticky;
-		top: $gutter/2;
 		text-align: right !important;
 		
 		li {
