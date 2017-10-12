@@ -1,5 +1,7 @@
 .subpage {
-	padding-bottom: $gutter;
+		@media only screen and (max-width: $breakpoint-med) {
+			padding-bottom: $gutter;
+		}
 	header {
 		margin-top: 5vh;
 			@media only screen and (min-width: $breakpoint-med) {
@@ -11,7 +13,7 @@
 			font-size: 4em;
 			font-weight: $font-weight-heavy;
 			span {
-				border-bottom: 0.1em solid $black;
+				border-bottom: 0.075em solid $black;
 				padding-bottom: 0;
 				line-height: 1;
 			}
@@ -24,6 +26,9 @@
 	}
 
 	.text {
+		@media only screen and (min-width: $breakpoint-med) {
+			padding-left: $gutter/2;
+		}
 		p {
 			margin-top: 0;
 		}

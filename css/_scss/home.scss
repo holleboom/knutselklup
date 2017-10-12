@@ -1,21 +1,92 @@
-.home {
+.figuresContainer {
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	.figures {
+		transform: scale(1.25);
+		.row {
+			[class^="col"] {
+				height: 50vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 0;
+				margin-bottom: 0;
+
+			}
+
+			svg {
+				position: relative;
+				display: inline-block;
+				width: 85%;
+			}
+
+			@media only screen and (min-width: $breakpoint-med) {
+				svg {
+					&.a {
+						left: 2.5vw;
+					}
+					&.b {
+						top: 0;
+						left: -5vw;
+					}
+					&.c {
+						top: -5vh;
+						left: -5vw;
+					}
+					&.d {
+						left: 7.5vw;
+						top: 10vh;
+					}
+					&.e {
+						left: 5vw;
+						top: 10vh;
+					}
+					&.f {
+						left: 7.5vw;
+						bottom: 5vh;
+					}
+				}
+			}
+
+			@media only screen and (max-width: $breakpoint-med) {
+				svg {
+					&.a, &.c {
+						margin-top: 20vh;
+					}
+					&.d, &.f {
+						margin-bottom: 20vh;
+					}
+					&.b {
+						margin-top: -10vh;
+					}
+					&.e {
+						margin-top: 10vh;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+.logoContainer {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	
 	.logo {
 		position: relative;
 		display: inline-block;
-		max-width: 35vw;
+		width: 35vw;
 		svg {
 			width: 100%;
 		}
-	}
-	.bg {
-		z-index: -1;
-		width: 110vw;
-		position: fixed;
-		left: -5vw;
-		top: -20vh;
 	}
 }

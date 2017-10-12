@@ -9,7 +9,6 @@
 @import "subPage";
 
 body {
-	background-color: white;
 
 	&.over {
 		background-color: $green;
@@ -32,10 +31,12 @@ a {
 
 nav {
 	position: relative;
+	z-index: 1;
 	top: $gutter/5;
 	padding: $gutter/5 0;
 
 	font-weight: $font-weight-heavy;
+	font-size: 1.25em;
 	text-transform: lowercase;
 
 	ul {
