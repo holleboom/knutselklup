@@ -57,6 +57,11 @@ nav {
 	
 
 	@media only screen and (min-width: $breakpoint-med) {
+		li {
+			display: inline-block;
+		}
+	}
+	@media only screen and (min-width: $breakpoint-med) {
 		position: sticky;
 		text-align: right !important;
 		
