@@ -2,18 +2,13 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-// Add your styles here
+@import "variables";
+@import "simple-grid";
 
-$defaultSpacing: 30px;
-
-$green: #63BEAE;
-$pink: #F5B8BC;
-$yellow: #E9C71D;
-$blue: #86D1D6;
+@import "home.scss";
+@import "subPage";
 
 body {
-	margin: 0;
-	padding: 0;
 	background-color: white;
 	height: 100vh;
 	width: 100vw;
@@ -31,9 +26,6 @@ body {
 		background-color: $yellow;
 	}
 }
-
-
-
 
 a {
 	text-decoration: none;
@@ -61,47 +53,4 @@ nav {
 			border-bottom: 2px solid black;
 		}
 	}
-}
-
-.home {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	.logo {
-		position: relative;
-		display: inline-block;
-		max-width: 35vw;
-		svg {
-			
-			width: 100%;
-		}
-	}
-
-	.bg {
-		z-index: -1;
-		width: 110vw;
-		position: fixed;
-		left: -5vw;
-		top: -20vh;
-	}
-}
-
-figure.aside {
-	width: 40vw;
-	position: fixed;
-	top: 0;
-	margin: 0;
-	left: $defaultSpacing;
-
-	img {
-		width: 100%;
-		margin: 0;
-	}
-}
-
-article.text {
-	position: relative;
-	margin-top: $defaultSpacing*3;
-	margin-left: calc(40vw + #{$defaultSpacing} * 2);
 }
