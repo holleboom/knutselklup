@@ -3,14 +3,13 @@
 	header {
 		margin-top: 5vh;
 			@media only screen and (min-width: $breakpoint-med) {
-				margin-top: 7.5vh;
+				margin-top: 10vh;
 			}
 		z-index: 1;
 		position: relative;
 		h1 {
-			font-size: 3.5em;
+			font-size: 4em;
 			font-weight: $font-weight-heavy;
-			margin: 0.75em 0;
 			span {
 				border-bottom: 0.1em solid $black;
 				padding-bottom: 0;
@@ -25,7 +24,6 @@
 	}
 
 	.text {
-		padding-left: $gutter/2;
 		p {
 			margin-top: 0;
 		}
@@ -41,9 +39,13 @@
 		}
 		@media only screen and (min-width: $breakpoint-med) {
 			position: fixed;
-			width: 35% !important;
+			width: 33% !important;
 			top: 0;
 			left: $gutter*1.5;
+
+			// position: sticky;
+			// bottom: 0;
+			// left: $gutter*2;
 		}
 		img {
 			display: block;
