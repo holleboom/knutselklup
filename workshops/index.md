@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: Workshops door KnutselKlup Rotterdam
+title: workshops
 ---
 
 Knutsel Klup creëert en geeft themaworkshops op maat. Voor alle kinderen in de stad. Wij bedenken een workshop die bij jouw

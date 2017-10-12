@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: Contact met de KnutselKlup Rotterdam
+title: contact
 ---
 
 

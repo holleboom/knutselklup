@@ -2,12 +2,18 @@
 layout: home
 ---
 
-<section class="content">
-	<figure class="aside">
-		<img src="/assets/{{ page.url | remove: '/' }}.jpg"/>
+<section class="container">
+	<header>
+		<h1 class="center"><span>{{ page.title }}</span></h1>
+	</header>
+	<div class="row">
+		<div class="col-6">
+		</div>
+		<article class="col-6 text">
+			{{ content }}
+		</article>
+	</div>
+	<figure class="aside col-5">
+		<img class="col-12" src="/assets/{{ page.url | remove: '/' }}.jpg" />
 	</figure>
-
-	<article class="text">
-    	{{ content }}
-  	</article>
 </section>

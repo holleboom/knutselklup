@@ -10,8 +10,6 @@
 
 body {
 	background-color: white;
-	height: 100vh;
-	width: 100vw;
 
 	&.over {
 		background-color: $green;
@@ -29,22 +27,20 @@ body {
 
 a {
 	text-decoration: none;
-	border-bottom: 2px solid black;
-	color: inherit;
-	// display: inline-block;
+	border-bottom: 2px solid $black;
 }
 
 nav {
-	position: fixed;
-	top: $defaultSpacing/4;
-	right: $defaultSpacing;
-	font-weight: 700;
+	font-weight: $font-weight-heavy;
 	text-transform: lowercase;
-
+	padding: $gutter/4 0;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
 	li {
-		display: inline-block;
-		margin: $defaultSpacing/2 $defaultSpacing/4;
-
+		display: block;
+		margin: $gutter/2 $gutter/4;
 		a {
 			text-decoration: none;
 			border-bottom: none;
@@ -53,4 +49,19 @@ nav {
 			border-bottom: 2px solid black;
 		}
 	}
+	
+
+	@media only screen and (min-width: $breakpoint-med) {
+		position: sticky;
+		top: $gutter/2;
+		text-align: right !important;
+		
+		li {
+			display: inline-block;
+		}
+	}
+
+
+
+
 }
