@@ -45,9 +45,11 @@
 				&.a, &.c, &.e {
 					animation-direction: reverse;
 				}
+
+				transition: all 200ms ease-out;
 			}
 
-			@media only screen and (min-width: $breakpoint-med) {
+			@media only screen and (min-width: $breakpoint-large) {
 				svg {
 					&.a {
 						left: 2.5vw;
@@ -75,9 +77,9 @@
 				}
 			}
 
-			@media only screen and (max-width: $breakpoint-med) {
+			@media only screen and (max-width: $breakpoint-large) {
 				svg {
-					width: 200%;
+					width: 175%;
 					&.a, &.c {
 						margin-top: 20vh;
 					}
